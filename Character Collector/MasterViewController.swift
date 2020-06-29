@@ -97,7 +97,19 @@ extension MasterViewController: MosaicViewLayoutDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, heightForDescriptionAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat {
-        return 60
+        let character = charactersData[indexPath.item]
+        let descriptionHeight = heightForText(character.description, width: width - 24)
+        let height = 4 + 17 + 4 + descriptionHeight + 12
+        return height
+    }
+    
+    func heightForText(_ text: String, width: CGFloat) -> CGFloat {
+        let font = UIFont.systemFont(ofSize: 10)
+        let rect = NSString(string: text).boundingRect(with: CGSize(width: width, height: CGFloat(MAXFLOAT)),
+                                                       options: .usesLineFragmentOrigin,
+                                                       attributes: [NSAttributedString.Key.font : font],
+                                                       context: nil)
+        return ceil(rect.height)
     }
 }
 
