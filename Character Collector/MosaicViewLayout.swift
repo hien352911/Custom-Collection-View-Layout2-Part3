@@ -14,13 +14,15 @@ protocol MosaicViewLayoutDelegate {
 }
 
 class MosaicViewLayout: UICollectionViewLayout {
+    var cellPadding: CGFloat = 0
     var numberOfColumns = 0
     var delegate: MosaicViewLayoutDelegate!
     var cache = [UICollectionViewLayoutAttributes]()
     fileprivate var contentHeight: CGFloat = 0
     fileprivate var width: CGFloat {
         get {
-            return collectionView!.bounds.width
+            let insets = collectionView!.contentInset
+            return collectionView!.bounds.width - (insets.left + insets.right)
         }
     }
     
@@ -48,8 +50,9 @@ class MosaicViewLayout: UICollectionViewLayout {
                                    width: columnWidth,
                                    height: height)
                 
+                let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
                 let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
-                attributes.frame = frame
+                attributes.frame = insetFrame
                 cache.append(attributes)
                 
                 contentHeight = max(contentHeight, frame.maxY)

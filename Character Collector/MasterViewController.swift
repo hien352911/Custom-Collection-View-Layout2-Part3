@@ -37,6 +37,9 @@ class MasterViewController: UICollectionViewController {
     let layout = collectionViewLayout as! MosaicViewLayout
     layout.numberOfColumns = 2
     layout.delegate = self
+    layout.cellPadding = 5
+    
+    collectionView.contentInset = UIEdgeInsets(top: 5, left: 5, bottom: 10, right: 5)
     
   }
     
