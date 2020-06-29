@@ -29,6 +29,8 @@ class RoundedCharacterCell: UICollectionViewCell {
   @IBOutlet weak var characterImage: UIImageView!
   @IBOutlet weak var characterTitle: UILabel!
   @IBOutlet weak var characterInfo: UILabel!
+    @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
+    
   
   var character: Characters? {
     didSet {
@@ -47,6 +49,13 @@ class RoundedCharacterCell: UICollectionViewCell {
     self.layer.borderWidth = 6
     self.layer.borderColor = UIColor(red: 0.5, green: 0.47, blue: 0.25, alpha: 1.0).cgColor
   }
+    
+    override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
+        super.apply(layoutAttributes)
+        
+        let attributes = layoutAttributes as! MosaicLayoutAttributes
+        imageViewHeightConstraint.constant = attributes.imageHeight
+    }
   
   override func prepareForReuse() {
     super.prepareForReuse()

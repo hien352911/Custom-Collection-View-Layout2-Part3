@@ -52,10 +52,9 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FrA-Ac-GzZ">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mci-5H-M8J">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mci-5H-M8J">
                                                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="200" id="hkg-qL-bqb"/>
                                                         <constraint firstAttribute="height" constant="200" id="qi6-Ke-a78"/>
                                                     </constraints>
                                                 </imageView>
@@ -98,6 +97,7 @@
                                     <outlet property="characterImage" destination="Mci-5H-M8J" id="hNF-zg-jLF"/>
                                     <outlet property="characterInfo" destination="E8T-1q-fWY" id="5aL-wV-ucn"/>
                                     <outlet property="characterTitle" destination="QgD-26-u1s" id="I9Y-XE-bb5"/>
+                                    <outlet property="imageViewHeightConstraint" destination="qi6-Ke-a78" id="PEJ-3a-Edv"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
