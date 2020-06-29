@@ -34,6 +34,9 @@ class MasterViewController: UICollectionViewController {
     
     navigationController!.isToolbarHidden = true
     
+    let layout = collectionViewLayout as! CustomViewLayout
+    layout.numberOfColumns = 2
+    
   }
     
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
