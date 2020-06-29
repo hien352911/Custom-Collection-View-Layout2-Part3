@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8BE517B224A98CD600475CB3 /* 08-CollectionViewLayoutBasics.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8BE517B124A98CD600475CB3 /* 08-CollectionViewLayoutBasics.pdf */; };
 		8BE517B424A98D6100475CB3 /* CustomViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE517B324A98D6100475CB3 /* CustomViewLayout.swift */; };
+		8BE517B824A9902400475CB3 /* 09-MosaicLayout-GettingStarted.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8BE517B624A9902300475CB3 /* 09-MosaicLayout-GettingStarted.pdf */; };
+		8BE517B924A9902400475CB3 /* 09-Challenge.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8BE517B724A9902400475CB3 /* 09-Challenge.pdf */; };
 		F5242B2D1DEE9F3100EC44AE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5242B2C1DEE9F3100EC44AE /* DetailViewController.swift */; };
 		F53106FB1DEF581800768D8D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53106FA1DEF581800768D8D /* GradientView.swift */; };
 		F577C8E81DEE419A004F074C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F577C8E71DEE419A004F074C /* AppDelegate.swift */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		8BE517B124A98CD600475CB3 /* 08-CollectionViewLayoutBasics.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "08-CollectionViewLayoutBasics.pdf"; sourceTree = "<group>"; };
 		8BE517B324A98D6100475CB3 /* CustomViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewLayout.swift; sourceTree = "<group>"; };
+		8BE517B624A9902300475CB3 /* 09-MosaicLayout-GettingStarted.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "09-MosaicLayout-GettingStarted.pdf"; sourceTree = "<group>"; };
+		8BE517B724A9902400475CB3 /* 09-Challenge.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "09-Challenge.pdf"; sourceTree = "<group>"; };
 		F5242B2C1DEE9F3100EC44AE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F53106FA1DEF581800768D8D /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		F577C8E41DEE419A004F074C /* Character Collector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Character Collector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +58,7 @@
 		8BE517AF24A98CBA00475CB3 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				8BE517B524A9901100475CB3 /* 9.Mosaic Layout Getting Started */,
 				8BE517B024A98CC500475CB3 /* 8.UICollectionViewLayout Basics */,
 			);
 			name = Documents;
@@ -65,6 +70,15 @@
 				8BE517B124A98CD600475CB3 /* 08-CollectionViewLayoutBasics.pdf */,
 			);
 			name = "8.UICollectionViewLayout Basics";
+			sourceTree = "<group>";
+		};
+		8BE517B524A9901100475CB3 /* 9.Mosaic Layout Getting Started */ = {
+			isa = PBXGroup;
+			children = (
+				8BE517B724A9902400475CB3 /* 09-Challenge.pdf */,
+				8BE517B624A9902300475CB3 /* 09-MosaicLayout-GettingStarted.pdf */,
+			);
+			name = "9.Mosaic Layout Getting Started";
 			sourceTree = "<group>";
 		};
 		F50D7A4E1DF0782700BA3BAD /* Layouts */ = {
@@ -199,7 +213,9 @@
 			files = (
 				F577C8FB1DEE42B2004F074C /* Character_Data.plist in Resources */,
 				F5FB5E011E1C3987007C1BBE /* LaunchScreen.storyboard in Resources */,
+				8BE517B824A9902400475CB3 /* 09-MosaicLayout-GettingStarted.pdf in Resources */,
 				F577C8EF1DEE419A004F074C /* Assets.xcassets in Resources */,
+				8BE517B924A9902400475CB3 /* 09-Challenge.pdf in Resources */,
 				8BE517B224A98CD600475CB3 /* 08-CollectionViewLayoutBasics.pdf in Resources */,
 				F577C8ED1DEE419A004F074C /* Main.storyboard in Resources */,
 			);
