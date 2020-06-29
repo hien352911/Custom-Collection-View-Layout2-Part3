@@ -8,11 +8,16 @@
 
 import UIKit
 
-class CustomViewLayout: UICollectionViewLayout {
+protocol MosaicViewLayoutDelegate {
+    func collectionView(_ collectionView: UICollectionView,
+                        heightForItemAtIndexPath indexPath: IndexPath) -> CGFloat
+}
+
+class MosaicViewLayout: UICollectionViewLayout {
     var numberOfColumns = 0
+    var delegate: MosaicViewLayoutDelegate!
     var cache = [UICollectionViewLayoutAttributes]()
     fileprivate var contentHeight: CGFloat = 0
-    fileprivate var cellHeight: CGFloat = 300.0
     fileprivate var width: CGFloat {
         get {
             return collectionView!.bounds.width
@@ -37,17 +42,18 @@ class CustomViewLayout: UICollectionViewLayout {
             var column = 0
             for item in 0..<collectionView!.numberOfItems(inSection: 0) {
                 let indexPath = IndexPath(item: item, section: 0)
+                let height = delegate.collectionView(collectionView!, heightForItemAtIndexPath: indexPath)
                 let frame = CGRect(x: xOffsets[column],
                                    y: yOffsets[column],
                                    width: columnWidth,
-                                   height: cellHeight)
+                                   height: height)
                 
                 let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
                 attributes.frame = frame
                 cache.append(attributes)
                 
                 contentHeight = max(contentHeight, frame.maxY)
-                yOffsets[column] = yOffsets[column] + cellHeight
+                yOffsets[column] = yOffsets[column] + height
                 column = column >= (numberOfColumns - 1) ? 0 : (column + 1)
             }
         }

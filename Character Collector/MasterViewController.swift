@@ -34,8 +34,9 @@ class MasterViewController: UICollectionViewController {
     
     navigationController!.isToolbarHidden = true
     
-    let layout = collectionViewLayout as! CustomViewLayout
+    let layout = collectionViewLayout as! MosaicViewLayout
     layout.numberOfColumns = 2
+    layout.delegate = self
     
   }
     
@@ -80,7 +81,12 @@ extension MasterViewController {
   }
 }
 
-
+extension MasterViewController: MosaicViewLayoutDelegate {
+    func collectionView(_ collectionView: UICollectionView, heightForItemAtIndexPath indexPath: IndexPath) -> CGFloat {
+        let random = arc4random_uniform(4) + 1
+        return CGFloat(random * 100)
+    }
+}
 
 
 
