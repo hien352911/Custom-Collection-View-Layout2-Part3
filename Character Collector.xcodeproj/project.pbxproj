@@ -14,6 +14,7 @@
 		8BE517BD24A9940000475CB3 /* 10-MosaicLayout-LayoutAttributes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8BE517BC24A9940000475CB3 /* 10-MosaicLayout-LayoutAttributes.pdf */; };
 		8BE517C024A9978300475CB3 /* 11-MosaicLayout-CellContent.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8BE517BF24A9978300475CB3 /* 11-MosaicLayout-CellContent.pdf */; };
 		8BE517C324A99C3200475CB3 /* 12-MultipleCollectionViewLayouts.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8BE517C224A99C3200475CB3 /* 12-MultipleCollectionViewLayouts.pdf */; };
+		8BE517C524A99C9600475CB3 /* CarouselViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE517C424A99C9600475CB3 /* CarouselViewLayout.swift */; };
 		F5242B2D1DEE9F3100EC44AE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5242B2C1DEE9F3100EC44AE /* DetailViewController.swift */; };
 		F53106FB1DEF581800768D8D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53106FA1DEF581800768D8D /* GradientView.swift */; };
 		F577C8E81DEE419A004F074C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F577C8E71DEE419A004F074C /* AppDelegate.swift */; };
@@ -35,6 +36,7 @@
 		8BE517BC24A9940000475CB3 /* 10-MosaicLayout-LayoutAttributes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "10-MosaicLayout-LayoutAttributes.pdf"; sourceTree = "<group>"; };
 		8BE517BF24A9978300475CB3 /* 11-MosaicLayout-CellContent.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "11-MosaicLayout-CellContent.pdf"; sourceTree = "<group>"; };
 		8BE517C224A99C3200475CB3 /* 12-MultipleCollectionViewLayouts.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "12-MultipleCollectionViewLayouts.pdf"; sourceTree = "<group>"; };
+		8BE517C424A99C9600475CB3 /* CarouselViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselViewLayout.swift; sourceTree = "<group>"; };
 		F5242B2C1DEE9F3100EC44AE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F53106FA1DEF581800768D8D /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		F577C8E41DEE419A004F074C /* Character Collector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Character Collector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +119,7 @@
 		F50D7A4E1DF0782700BA3BAD /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				8BE517C424A99C9600475CB3 /* CarouselViewLayout.swift */,
 				8BE517B324A98D6100475CB3 /* MosaicViewLayout.swift */,
 			);
 			name = Layouts;
@@ -268,6 +271,7 @@
 				F577C8FD1DEE51AE004F074C /* Characters.swift in Sources */,
 				F53106FB1DEF581800768D8D /* GradientView.swift in Sources */,
 				F5ACC6FF1DF5F54D008F503E /* RoundedCharacterCell.swift in Sources */,
+				8BE517C524A99C9600475CB3 /* CarouselViewLayout.swift in Sources */,
 				F5242B2D1DEE9F3100EC44AE /* DetailViewController.swift in Sources */,
 				8BE517B424A98D6100475CB3 /* MosaicViewLayout.swift in Sources */,
 				F577C8FF1DEE61D7004F074C /* MasterViewController.swift in Sources */,

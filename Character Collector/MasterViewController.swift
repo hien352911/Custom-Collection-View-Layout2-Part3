@@ -51,7 +51,33 @@ class MasterViewController: UICollectionViewController {
     }
   }
     
-
+    @IBAction func carouseLayoutButtonAction(_ sender: UIButton) {
+        let layout = CarouselViewLayout()
+        layout.delegate = self
+        layout.numberOfColumns = 1
+        layout.cellPadding = -20
+        
+        collectionView!.contentInset = UIEdgeInsets(top: 5, left: 100, bottom: 10, right: 100)
+        
+        collectionView.collectionViewLayout.invalidateLayout()
+        
+        collectionView.setCollectionViewLayout(layout, animated: true)
+        collectionView.reloadData()
+    }
+    
+    @IBAction func mosaicLayoutButtonAction(_ sender: UIButton) {
+        let layout = MosaicViewLayout()
+        layout.delegate = self
+        layout.numberOfColumns = 2
+        layout.cellPadding = 5
+        
+        collectionView!.contentInset = UIEdgeInsets(top: 5, left: 5, bottom: 10, right: 5)
+        
+        collectionView.collectionViewLayout.invalidateLayout()
+        
+        collectionView.setCollectionViewLayout(layout, animated: true)
+        collectionView.reloadData()
+    }
 }
 
 

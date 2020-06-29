@@ -106,7 +106,18 @@
                             <outlet property="delegate" destination="jKa-7M-OOw" id="hav-g7-DeN"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="ThV-Vb-VeP"/>
+                    <navigationItem key="navigationItem" id="ThV-Vb-VeP">
+                        <barButtonItem key="leftBarButtonItem" title="Mosaic Layout" id="UQt-39-jDy">
+                            <connections>
+                                <action selector="mosaicLayoutButtonAction:" destination="jKa-7M-OOw" id="QJg-1y-zPj"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Carousel Layout" id="d8a-fT-LuU">
+                            <connections>
+                                <action selector="carouseLayoutButtonAction:" destination="jKa-7M-OOw" id="6dB-oG-GTp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="ew4-VI-zZE" kind="show" identifier="MasterToDetail" id="9o4-qR-NZG"/>
