@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8BE517B224A98CD600475CB3 /* 08-CollectionViewLayoutBasics.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8BE517B124A98CD600475CB3 /* 08-CollectionViewLayoutBasics.pdf */; };
+		8BE517B424A98D6100475CB3 /* CustomViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE517B324A98D6100475CB3 /* CustomViewLayout.swift */; };
 		F5242B2D1DEE9F3100EC44AE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5242B2C1DEE9F3100EC44AE /* DetailViewController.swift */; };
 		F53106FB1DEF581800768D8D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53106FA1DEF581800768D8D /* GradientView.swift */; };
 		F577C8E81DEE419A004F074C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F577C8E71DEE419A004F074C /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		8BE517B124A98CD600475CB3 /* 08-CollectionViewLayoutBasics.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "08-CollectionViewLayoutBasics.pdf"; sourceTree = "<group>"; };
+		8BE517B324A98D6100475CB3 /* CustomViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewLayout.swift; sourceTree = "<group>"; };
 		F5242B2C1DEE9F3100EC44AE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F53106FA1DEF581800768D8D /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		F577C8E41DEE419A004F074C /* Character Collector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Character Collector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,7 @@
 		F50D7A4E1DF0782700BA3BAD /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				8BE517B324A98D6100475CB3 /* CustomViewLayout.swift */,
 			);
 			name = Layouts;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				F53106FB1DEF581800768D8D /* GradientView.swift in Sources */,
 				F5ACC6FF1DF5F54D008F503E /* RoundedCharacterCell.swift in Sources */,
 				F5242B2D1DEE9F3100EC44AE /* DetailViewController.swift in Sources */,
+				8BE517B424A98D6100475CB3 /* CustomViewLayout.swift in Sources */,
 				F577C8FF1DEE61D7004F074C /* MasterViewController.swift in Sources */,
 				F577C9021DEE62FB004F074C /* CharactersCell.swift in Sources */,
 			);
