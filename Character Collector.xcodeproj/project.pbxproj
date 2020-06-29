@@ -13,6 +13,7 @@
 		8BE517B924A9902400475CB3 /* 09-Challenge.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8BE517B724A9902400475CB3 /* 09-Challenge.pdf */; };
 		8BE517BD24A9940000475CB3 /* 10-MosaicLayout-LayoutAttributes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8BE517BC24A9940000475CB3 /* 10-MosaicLayout-LayoutAttributes.pdf */; };
 		8BE517C024A9978300475CB3 /* 11-MosaicLayout-CellContent.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8BE517BF24A9978300475CB3 /* 11-MosaicLayout-CellContent.pdf */; };
+		8BE517C324A99C3200475CB3 /* 12-MultipleCollectionViewLayouts.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8BE517C224A99C3200475CB3 /* 12-MultipleCollectionViewLayouts.pdf */; };
 		F5242B2D1DEE9F3100EC44AE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5242B2C1DEE9F3100EC44AE /* DetailViewController.swift */; };
 		F53106FB1DEF581800768D8D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53106FA1DEF581800768D8D /* GradientView.swift */; };
 		F577C8E81DEE419A004F074C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F577C8E71DEE419A004F074C /* AppDelegate.swift */; };
@@ -33,6 +34,7 @@
 		8BE517B724A9902400475CB3 /* 09-Challenge.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "09-Challenge.pdf"; sourceTree = "<group>"; };
 		8BE517BC24A9940000475CB3 /* 10-MosaicLayout-LayoutAttributes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "10-MosaicLayout-LayoutAttributes.pdf"; sourceTree = "<group>"; };
 		8BE517BF24A9978300475CB3 /* 11-MosaicLayout-CellContent.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "11-MosaicLayout-CellContent.pdf"; sourceTree = "<group>"; };
+		8BE517C224A99C3200475CB3 /* 12-MultipleCollectionViewLayouts.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "12-MultipleCollectionViewLayouts.pdf"; sourceTree = "<group>"; };
 		F5242B2C1DEE9F3100EC44AE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F53106FA1DEF581800768D8D /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		F577C8E41DEE419A004F074C /* Character Collector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Character Collector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 		8BE517AF24A98CBA00475CB3 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				8BE517C124A99C2600475CB3 /* 12.Multiple Collection View Layouts */,
 				8BE517BE24A9977000475CB3 /* 11.Mosaic Layout Cell Content */,
 				8BE517BB24A993EE00475CB3 /* 10.Mosaic Layout Layout Attributes */,
 				8BE517B524A9901100475CB3 /* 9.Mosaic Layout Getting Started */,
@@ -101,6 +104,14 @@
 				8BE517BF24A9978300475CB3 /* 11-MosaicLayout-CellContent.pdf */,
 			);
 			name = "11.Mosaic Layout Cell Content";
+			sourceTree = "<group>";
+		};
+		8BE517C124A99C2600475CB3 /* 12.Multiple Collection View Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				8BE517C224A99C3200475CB3 /* 12-MultipleCollectionViewLayouts.pdf */,
+			);
+			name = "12.Multiple Collection View Layouts";
 			sourceTree = "<group>";
 		};
 		F50D7A4E1DF0782700BA3BAD /* Layouts */ = {
@@ -235,6 +246,7 @@
 			files = (
 				8BE517C024A9978300475CB3 /* 11-MosaicLayout-CellContent.pdf in Resources */,
 				F577C8FB1DEE42B2004F074C /* Character_Data.plist in Resources */,
+				8BE517C324A99C3200475CB3 /* 12-MultipleCollectionViewLayouts.pdf in Resources */,
 				F5FB5E011E1C3987007C1BBE /* LaunchScreen.storyboard in Resources */,
 				8BE517B824A9902400475CB3 /* 09-MosaicLayout-GettingStarted.pdf in Resources */,
 				F577C8EF1DEE419A004F074C /* Assets.xcassets in Resources */,
