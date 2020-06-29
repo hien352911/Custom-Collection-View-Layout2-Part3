@@ -85,9 +85,13 @@ extension MasterViewController {
 }
 
 extension MasterViewController: MosaicViewLayoutDelegate {
-    func collectionView(_ collectionView: UICollectionView, heightForItemAtIndexPath indexPath: IndexPath) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView, heightForImageAtIndexPath indexPath: IndexPath) -> CGFloat {
         let random = arc4random_uniform(4) + 1
         return CGFloat(random * 100)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, heightForDescriptionAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat {
+        return 60
     }
 }
 
