@@ -11,10 +11,12 @@ import UIKit
 protocol MosaicViewLayoutDelegate {
     
     func collectionView(_ collectionView: UICollectionView,
-                        heightForImageAtIndexPath indexPath: IndexPath) -> CGFloat
+                        heightForImageAtIndexPath indexPath: IndexPath,
+                        withWidth width: CGFloat) -> CGFloat
     
     func collectionView(_ collectionView: UICollectionView,
-                        heightForDescriptionAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat
+                        heightForDescriptionAtIndexPath indexPath: IndexPath,
+                        withWidth width: CGFloat) -> CGFloat
     
 }
 
@@ -74,7 +76,7 @@ class MosaicViewLayout: UICollectionViewLayout {
             for item in 0..<collectionView!.numberOfItems(inSection: 0) {
                 let indexPath = IndexPath(item: item, section: 0)
                 let width = columnWidth - (cellPadding * 2)
-                let imageHeight = delegate.collectionView(collectionView!, heightForImageAtIndexPath: indexPath)
+                let imageHeight = delegate.collectionView(collectionView!, heightForImageAtIndexPath: indexPath, withWidth: width)
                 let descriptionHeight = delegate.collectionView(collectionView!, heightForDescriptionAtIndexPath: indexPath, withWidth: width)
                 
                 let height = cellPadding + imageHeight + descriptionHeight + cellPadding

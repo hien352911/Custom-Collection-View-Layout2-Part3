@@ -24,6 +24,7 @@
  */ 
 
 import UIKit
+import AVFoundation
 
 class MasterViewController: UICollectionViewController {
   
@@ -85,9 +86,14 @@ extension MasterViewController {
 }
 
 extension MasterViewController: MosaicViewLayoutDelegate {
-    func collectionView(_ collectionView: UICollectionView, heightForImageAtIndexPath indexPath: IndexPath) -> CGFloat {
-        let random = arc4random_uniform(4) + 1
-        return CGFloat(random * 100)
+    
+    func collectionView(_ collectionView: UICollectionView, heightForImageAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat {
+        let character = charactersData[indexPath.row]
+        let image = UIImage(named: character.name)
+        let boundingRect = CGRect(x: 0, y: 0, width: width, height: CGFloat(MAXFLOAT))
+        let rect = AVMakeRect(aspectRatio: image!.size, insideRect: boundingRect)
+        
+        return rect.height
     }
     
     func collectionView(_ collectionView: UICollectionView, heightForDescriptionAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat {
